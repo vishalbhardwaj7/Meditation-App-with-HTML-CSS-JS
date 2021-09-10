@@ -131,11 +131,12 @@ body {
     position: fixed;
   }
   .buttons {
-    height: 80px;
-    width: 80px;
+    height: 70px;
+    width: 70px;
   }
   .container {
     width: 100vw;
     grid-gap: 0;
+    padding: 5px;
   }
 }
