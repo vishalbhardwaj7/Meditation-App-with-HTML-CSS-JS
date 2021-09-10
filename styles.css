@@ -131,8 +131,8 @@ body {
     position: fixed;
   }
   .buttons {
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
   }
   .container {
     width: 100vw;
@@ -174,5 +174,9 @@ body {
   }
   #timer {
     grid-row: 2/3;
+  }
+  .footer {
+    box-sizing: border-box;
+    height: 16vh;
   }
 }
