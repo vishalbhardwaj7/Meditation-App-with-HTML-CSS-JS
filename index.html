@@ -1,0 +1,44 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Stylish&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome Icons -->
+    <script
+      src="https://kit.fontawesome.com/16a9c319b6.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jQuery -->
+    <script src="./scripts/jquery-3.6.0.min.js"></script>
+    <title>Meditation App</title>
+  </head>
+  <body>
+    <div id="header" class="header"><h1>Meditation App</h1></div>
+    <!-- Container Div -->
+    <div id="container" class="container">
+      <div time="2" id="twoMin" class="buttons twoMin">2 MIN</div>
+      <div time="5" id="fiveMin" class="buttons fiveMin">5 MIN</div>
+      <div time="10" id="tenMin" class="buttons tenMin">10 MIN</div>
+      <div id="play" class="buttons play">
+        <i class="fas fa-play-circle"></i>
+      </div>
+      <div id="timer" class="buttons timer">00:00</div>
+      <div id="day" class="buttons day"><i class="fas fa-sun"></i></div>
+      <div id="night" class="buttons night"><i class="fas fa-moon"></i></div>
+    </div>
+    <div id="footer" class="footer">
+      CONTACT ME &nbsp | &nbsp;
+      <i id="contact" class="fab fa-instagram"></i>
+    </div>
+    <!-- Script -->
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

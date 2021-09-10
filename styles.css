@@ -1,0 +1,141 @@
+body {
+  display: flex;
+  margin: 0;
+  font-family: "Stylish", sans-serif;
+  font-size: xx-large;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  user-select: none;
+}
+.header {
+  margin-top: 0;
+  width: 100vw;
+  display: flex;
+  height: 20vh;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  border: 3px solid white;
+  background-image: url("./images/zig-zag.svg");
+}
+.footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+
+  height: 13vh;
+  align-items: center;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  border: 3px solid white;
+  box-sizing: border-box;
+  background-image: url("./images/zig-zag.svg");
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  width: 100vw;
+  grid-gap: 5%;
+  height: 64vh;
+  padding: 10px;
+  color: white;
+  background-image: url("./images/day.jpg");
+  background-size: 100% 100%;
+  transition: background-image 0.5s;
+}
+#twoMin {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+#fiveMin {
+  grid-column: 1/2;
+  grid-row: 2/4;
+  background-color: grey;
+}
+#tenMin {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+#day {
+  grid-column: 3/4;
+  grid-row: 1/3;
+  background-color: grey;
+  color: orange;
+}
+#night {
+  grid-row: 3/5;
+  grid-column: 3/4;
+}
+#play {
+  grid-row: 1/3;
+  grid-column: 2/3;
+}
+#timer {
+  grid-row: 3/4;
+}
+#contact {
+  cursor: pointer;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid white;
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  align-self: center;
+  justify-self: center;
+  background-color: chartreuse;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+@media only screen and (max-width: 550px) {
+  /* For mobile phones: */
+  body {
+    font-size: 20px;
+    margin: 0;
+    max-height: 100vh;
+    max-width: 100vw;
+    position: fixed;
+  }
+  .buttons {
+    height: 75px;
+    width: 75px;
+  }
+  .header {
+    height: 13vh;
+  }
+  .container {
+    width: 100vw;
+    height: 71vh;
+  }
+}
+@media only screen and (max-height: 700px) {
+  /* For mobile phones: */
+  body {
+    font-size: 20px;
+    margin: 0;
+    width: 100vw;
+    max-height: 100vh;
+    position: fixed;
+  }
+  .buttons {
+    height: 80px;
+    width: 80px;
+  }
+  .container {
+    width: 100vw;
+    grid-gap: 0;
+  }
+}
